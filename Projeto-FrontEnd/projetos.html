@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos - Equipe Tech</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Estilos personalizados (adicionado) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="logos/logoequipe.png" alt="Equipe Dragon" class="navbar-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html#tecnologias">Tecnologias</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#equipe">Equipe</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contato">Contato</a></li>
+          <li class="nav-item"><a class="nav-link active" href="projetos.html">Projetos</a></li>
+          <!-- botão claro/escuro (adicionado) -->
+          <li class="nav-item"><button class="btn btn-dark text-white ms-2" onclick="toggleDarkMode()" aria-label="Alternar modo claro/escuro">🌙/☀️</button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seção Projetos -->
+  <section id="projetos" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Nossos Projetos</h2>
+      <div class="row g-4">
+
+  <!-- Projeto 1 -->
+  <div class="col-md-3">
+    <div class="card">
+      <img src="logos/logoprojeto1.png" class="card-img-top" alt="Portfólio Pessoal Responsivo">
+      <div class="card-body">
+        <h5 class="card-title">Portfólio Pessoal Responsivo</h5>
+        <p class="card-text">Site em HTML e CSS com layout responsivo e boas práticas de acessibilidade.</p>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProjeto1">Ver mais</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projeto 2 -->
+  <div class="col-md-3">
+    <div class="card">
+      <img src="logos/logoprojeto2.png" class="card-img-top" alt="Landing Page Startup Tech">
+      <div class="card-body">
+        <h5 class="card-title">Landing Page Startup Tech</h5>
+        <p class="card-text">Página inicial fictícia de uma startup, com seções de serviços e depoimentos.</p>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProjeto2">Ver mais</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projeto 3 -->
+  <div class="col-md-3">
+    <div class="card">
+      <img src="logos/logoprojeto3.png" class="card-img-top" alt="Jogo da Velha Interativo">
+      <div class="card-body">
+        <h5 class="card-title">Jogo da Velha Interativo</h5>
+        <p class="card-text">Aplicação web em JavaScript que permite partidas entre dois jogadores o jogo da velha.</p>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProjeto3">Ver mais</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projeto 4 -->
+  <div class="col-md-3">
+    <div class="card">
+      <img src="logos/logoprojeto4.png" class="card-img-top" alt="Sistema de Cadastro de Usuários">
+      <div class="card-body">
+        <h5 class="card-title">Sistema de Cadastro</h5>
+        <p class="card-text">Aplicação fictícia em Java para cadastro e gerenciamento de usuários.</p>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProjeto4">Ver mais</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Projeto 1 -->
+<div class="modal fade" id="modalProjeto1" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">Portfólio Pessoal Responsivo</h5></div>
+      <div class="modal-body">
+        Desenvolvemos um site responsivo em HTML e CSS, com layout moderno usando Bootstrap. Inclui seções de perfil, habilidades, trabalhos realizados e formulário de contato. O design garante acessibilidade e ótima experiência em qualquer dispositivo.
+      </div>
+      <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Projeto 2 -->
+<div class="modal fade" id="modalProjeto2" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">Landing Page Startup Tech</h5></div>
+      <div class="modal-body">
+        Criamos uma landing page fictícia para uma startup de tecnologia. A página apresenta os serviços oferecidos, depoimentos em carousel e formulário de contato. Foram aplicados efeitos de transição e animações em botões e links para transmitir modernidade e inovação.
+      </div>
+      <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Projeto 3 -->
+<div class="modal fade" id="modalProjeto3" tabindex="-1"> 
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">Jogo da Velha Interativo</h5></div>
+      <div class="modal-body">
+        Desenvolvemos uma aplicação web do clássico jogo da velha. O sistema permite partidas entre dois jogadores, detecta automaticamente vitórias e empates, e oferece opção de reiniciar o jogo. Demonstra lógica de programação aplicada em JavaScript com interface amigável.
+      </div>
+      <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Projeto 4 -->
+<div class="modal fade" id="modalProjeto4" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">Sistema de Cadastro de Usuários</h5></div>
+      <div class="modal-body">
+        Criamos um sistema fictício de cadastro de usuários em Java. A aplicação permite inserir dados como nome, e-mail e senha, armazenando-os em memória. O projeto simula processos de back-end, com foco em organização de código e boas práticas de programação orientada a objetos.
+      </div>
+      <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button></div>
+    </div>
+  </div>
+</div>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Equipe Tech - Todos os direitos reservados</p>
+    <a href="#" class="text-white">Política de Privacidade</a>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Função toggleDarkMode local (adicionado) -->
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('bg-dark');
+      document.body.classList.toggle('text-white');
+      
+      // Alterar fundo dos modais
+      const modals = document.querySelectorAll(".modal-content");
+      modals.forEach(modal => {
+        modal.classList.toggle("bg-dark");
+        modal.classList.toggle("text-white");
+      });
+    }
+  </script>
+</body>
+</html>

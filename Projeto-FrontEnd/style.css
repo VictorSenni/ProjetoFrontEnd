@@ -1,0 +1,84 @@
+/* Paleta de cores e fontes */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffe395; /* fundo cinza claro */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1a1a1a;
+}
+.navbar .nav-link {
+  color: #fff;
+  transition: color 0.3s;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #00bfff;
+}
+.navbar-logo {
+  height: 48px;
+  width: auto;
+  display: inline-block;
+  border-radius: 6px; /* opcional, remove se não quiser cantos arredondados */
+}
+
+/* Seções */
+section {
+  padding: 60px 0;
+}
+main, section {
+  flex: 1;
+}
+
+/* Cards */
+
+.card {
+  background-color: #c7a957;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* Botões */
+.btn {
+  transition: background-color 0.3s, transform 0.3s;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+  background-color: #1a1a1a;
+  color: #ccc;
+}
+footer a {
+  color: #00bfff;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+#equipe {
+  background-color: #f5d56b; /* fundo da seção equipe */
+}
+
+.col-md-2-4 {
+  flex: 0 0 calc(20% - 0.5rem);
+  max-width: 20%;
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+}
+
+/* Carousel Depoimentos */
+.carousel-section {
+  background-color: #f5d56b;
+}
